@@ -1,0 +1,23 @@
+{
+  "name": "bushel",
+  "version": "0.0.1",
+  "description": "A JS to Bash compiler, because you deserve it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engineSixteen/bushel.git"
+  },
+  "keywords": [
+    "bash",
+    "compiler"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/engineSixteen/bushel/issues"
+  },
+  "homepage": "https://github.com/engineSixteen/bushel#readme"
+}
