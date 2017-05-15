@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - node
+  - 6
+  - 5
+  - 4
+branches:
+  only:
+    - master
+# before_install:
+#   - pip install --user codecov
+# after_success:
+#   - codecov --file coverage/lcov.info --disable search
+#   - npm run coveralls
+# script:
+#   - npm run validate

@@ -1,6 +1,6 @@
 {
   "name": "bushel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JS to Bash compiler, because you deserve it.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,39 @@
   "bugs": {
     "url": "https://github.com/engineSixteen/bushel/issues"
   },
-  "homepage": "https://github.com/engineSixteen/bushel#readme"
+  "homepage": "https://github.com/engineSixteen/bushel#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-istanbul": "^3.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.8.1",
+    "eslint-plugin-flowtype": "^2.25.0",
+    "husky": "^0.13.3",
+    "mocha": "^3.1.2",
+    "nyc": "^10.0.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "functions": 90,
+    "lines": 90,
+    "statements": 90,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "instrument": false,
+    "sourceMap": false,
+    "require": [
+      "babel-register"
+    ],
+    "include": [
+      "src"
+    ]
+  }
 }
